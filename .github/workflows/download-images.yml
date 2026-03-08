@@ -1,0 +1,65 @@
+name: Download and Commit Images
+
+on:
+  workflow_dispatch:
+
+jobs:
+  download-images:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      
+      - name: Download images from freerangedemocracy.com
+        run: |
+          mkdir -p public/images/posts
+          cd public/images/posts
+          
+          # Download site logo
+          curl -L -o "cropped-freerangedemocracy_imagine2.jpg" \
+            "https://freerangedemocracy.com/wp-content/uploads/2023/05/cropped-freerangedemocracy_imagine2.jpg"
+          
+          # Download welcome page image (UUID)
+          curl -L -o "06371a4f-c2df-45b9-af7d-73885ee93dc1.png" \
+            "https://freerangedemocracy.com/wp-content/uploads/2023/05/06371a4f-c2df-45b9-af7d-73885ee93dc1.png"
+          
+          # Download Part 1 rooster image  
+          curl -L -o "8b8858bd-06e8-4dcd-bc7d-2cda8103416e.png" \
+            "https://freerangedemocracy.com/wp-content/uploads/2023/05/8b8858bd-06e8-4dcd-bc7d-2cda8103416e.png"
+          
+          # Download Statue of Liberty image
+          curl -L -o "statue-of-liberty-267948-scaled.jpg" \
+            "https://freerangedemocracy.com/wp-content/uploads/2023/05/statue-of-liberty-267948-scaled.jpg"
+          
+          # Download Part 2 corporate image
+          curl -L -o "d7f5b6e1-140f-450f-9336-9f47396f896a.png" \
+            "https://freerangedemocracy.com/wp-content/uploads/2023/05/d7f5b6e1-140f-450f-9336-9f47396f896a.png"
+          
+          # Download rooster thumbnail (small version)
+          curl -L -o "039a42c6-ccb6-4c4e-82ce-b4c7d782b862.png" \
+            "https://freerangedemocracy.com/wp-content/uploads/2023/05/039a42c6-ccb6-4c4e-82ce-b4c7d782b862-169x300.png"
+          
+          # Download Part 2 thumbnail
+          curl -L -o "2d91e2e3-2a1b-46ff-a185-5937244e6e8c.png" \
+            "https://freerangedemocracy.com/wp-content/uploads/2023/05/2d91e2e3-2a1b-46ff-a185-5937244e6e8c-768x432.png"
+          
+          # Download chicken/rooster stock image
+          curl -L -o "roosters-5599141.jpg" \
+            "https://freerangedemocracy.com/wp-content/uploads/2023/05/chicken-1867521_1280-1024x683.jpg"
+          
+          echo "=== Downloaded files ==="
+          ls -la
+          echo "=== File types ==="
+          file *.jpg *.png 2>/dev/null || true
+      
+      - name: Commit images
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/images/posts/
+          git diff --staged --stat
+          git commit -m "Add site images from freerangedemocracy.com" || echo "No changes to commit"
+          git push
