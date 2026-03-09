@@ -154,13 +154,17 @@ export default async function WelcomePage() {
                 <source src="/images/grok-video-28e6e0ab-14db-4fdd-8ce9-ba1b5ddffa0c.mp4" type="video/mp4" />
               </video>
             </div>
-            <Image
-              src="/images/posts/8b8858bd-06e8-4dcd-bc7d-2cda8103416e.png"
-              alt="Democracy illustration"
-              width={320}
-              height={576}
-              className="welcome-sidebar-img"
-            />
+            <div className="welcome-sidebar-video-wrap">
+              <video
+                autoPlay
+                muted
+                loop
+                playsInline
+                className="welcome-sidebar-video"
+              >
+                <source src="/images/grok-video-63ef1f0a-0cc3-4654-bd6f-d0e743127845.mp4" type="video/mp4" />
+              </video>
+            </div>
           </aside>
         </div>
       </section>

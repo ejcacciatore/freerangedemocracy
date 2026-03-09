@@ -23,7 +23,7 @@
   --radius-xl:     16px;
   --shadow:        0 8px 48px rgba(0,0,0,0.7);
   --shadow-card:   0 4px 28px rgba(0,0,0,0.55);
-  --font-sans:     'Inter', system-ui, -apple-system, sans-serif;
+  --font-sans:     'Inter', 'Helvetica Neue', system-ui, -apple-system, sans-serif;
   --font-serif:    'Georgia', 'Times New Roman', serif;
   --font-display:  var(--font-cinzel, 'Cinzel'), 'Georgia', serif;
   --font-mono:     ui-monospace, 'SF Mono', 'Courier New', monospace;
@@ -41,8 +41,8 @@ body {
   background-color: var(--navy);
   color: var(--text-body);
   font-family: var(--font-sans);
-  font-size: 1.0625rem;
-  line-height: 1.75;
+  font-size: 1rem;
+  line-height: 1.7;
   min-height: 100vh;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -1331,9 +1331,9 @@ ul { list-style: none; }
 }
 
 .welcome-body p {
-  margin-bottom: 1.5rem;
-  font-size: 1.05rem;
-  line-height: 1.85;
+  margin-bottom: 1.35rem;
+  font-size: 1rem;
+  line-height: 1.75;
 }
 
 /* Welcome page — redesigned hero */
