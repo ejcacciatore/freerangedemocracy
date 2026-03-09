@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Cinzel } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Header";
+import HeaderNav from "@/components/HeaderNav";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -51,7 +51,7 @@ export default function RootLayout({
     <html lang="en" className={`${inter.variable} ${cinzel.variable}`}>
       <body>
         <div className="page-shell">
-          <Header />
+          <HeaderNav />
           <main className="page-main">{children}</main>
           <Footer />
         </div>
