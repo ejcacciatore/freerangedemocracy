@@ -6,7 +6,8 @@ author: "Rooster"
 category: "The coop"
 tags: []
 excerpt: "Small businesses are the backbone of Americas economy. Why are they always fighting an uphill battle?"
-image: "/images/posts/039a42c6-ccb6-4c4e-82ce-b4c7d782b862.png"
+image: "/images/grok-image-54a17304-97f1-4b28-99be-5bfe7ff4c637.png"
+video: "/images/grok-video-7c6da0c1-c452-406d-a89b-d8c3b6c38ba2.mp4"
 ---
 
 Small businesses are the backbone of Americas economy! Small businesses drive innovation, create jobs, and fuel economic growth. So, why does it seem like they are always fighting an uphill battle?

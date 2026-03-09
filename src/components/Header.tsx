@@ -1,7 +1,6 @@
 'use client';
 
 import Link from 'next/link';
-import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Header() {
@@ -9,17 +8,18 @@ export default function Header() {
 
   return (
     <header className="site-header">
-      {/* Logo bar */}
+      {/* Logo video — large, fades into header bg */}
       <div className="logo-bar">
-        <Link href="/" aria-label="FreeRangeDemocracy home">
-          <Image
-            src="/images/logo/freerangedemocracy-logo.jpg"
-            alt="FreeRangeDemocracy"
-            width={640}
-            height={209}
-            priority
-            className="site-logo"
-          />
+        <Link href="/" aria-label="FreeRangeDemocracy home" className="logo-link">
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="site-logo-video"
+          >
+            <source src="/images/logo-animation.mp4" type="video/mp4" />
+          </video>
         </Link>
       </div>
 

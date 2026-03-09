@@ -13,6 +13,7 @@ export interface PostFrontmatter {
   tags: string[];
   excerpt: string;
   image: string;
+  video?: string;
 }
 
 export interface Post extends PostFrontmatter {

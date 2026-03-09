@@ -157,8 +157,22 @@ export default async function BlogPostPage({ params }: PageProps) {
         </div>
       </section>
 
-      {/* Featured Image */}
-      {post.image && (
+      {/* Featured Video or Image */}
+      {post.video ? (
+        <div className="container mx-auto px-6 max-w-4xl -mt-0 pt-10">
+          <div className="post-video-wrap">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="post-video"
+            >
+              <source src={post.video} type="video/mp4" />
+            </video>
+          </div>
+        </div>
+      ) : post.image ? (
         <div className="container mx-auto px-6 max-w-4xl -mt-0 pt-10">
           <div className="rounded-2xl overflow-hidden">
             <Image
@@ -170,7 +184,7 @@ export default async function BlogPostPage({ params }: PageProps) {
             />
           </div>
         </div>
-      )}
+      ) : null}
 
       {/* Article Body */}
       <article className="py-12">

@@ -15,8 +15,22 @@ export default function PostCard({ post }: PostCardProps) {
 
   return (
     <article className="post-card">
-      {/* Hero image */}
-      {post.image && (
+      {/* Hero video or image */}
+      {post.video ? (
+        <Link href={`/blog/${post.slug}`} className="post-card-image-link" tabIndex={-1}>
+          <div className="post-card-image-wrap">
+            <video
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="post-card-video"
+            >
+              <source src={post.video} type="video/mp4" />
+            </video>
+          </div>
+        </Link>
+      ) : post.image ? (
         <Link href={`/blog/${post.slug}`} className="post-card-image-link" tabIndex={-1}>
           <div className="post-card-image-wrap">
             <Image
@@ -28,7 +42,7 @@ export default function PostCard({ post }: PostCardProps) {
             />
           </div>
         </Link>
-      )}
+      ) : null}
 
       {/* Body */}
       <div className="post-card-body">

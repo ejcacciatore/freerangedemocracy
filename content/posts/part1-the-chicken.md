@@ -6,7 +6,7 @@ author: "Rooster"
 category: "The coop"
 tags: []
 excerpt: "Who Influences Corruption and Non-Democratic Influence in the United States?"
-image: "/images/posts/d7f5b6e1-140f-450f-9336-9f47396f896a.png"
+image: "/images/grok-image-0ec0b9b2-8831-4c25-b7a8-bb3437c043b0.png"
 ---
 
 **Who Influences Corruption and Non-Democratic Influence in the United States?**
