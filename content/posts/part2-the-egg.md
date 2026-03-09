@@ -32,4 +32,4 @@ And then there is the revolving door phenomenon, where individuals move between 
 
 In conclusion, by reducing unnecessary regulations, promoting transparency in lobbying and campaign contributions, and encouraging the use of technology, we can create an environment where small businesses can thrive.
 
-![Statue of Liberty](/images/posts/statue-of-liberty-267948.jpg)
+![Statue of Liberty](/images/posts/statue-of-liberty-267948-scaled.jpg)
