@@ -6,10 +6,10 @@ author: "Rooster"
 category: "Introduction and Background"
 tags: ["Introduction"]
 excerpt: "Hello and welcome to FreeRangeDemocracy.com, your new go-to resource for exploring the delicate balance of power between government and corporations."
-image: "/images/posts/06371a4f-c2df-45b9-af7d-73885ee93dc1.png"
+image: "/images/posts/06371a4f-c2df-45b9-af7d-73885ee93dc1.pnhg"
 ---
 
-Hello and welcome to FreeRangeDemocracy.com, your new go-to resource for exploring the delicate balance of power between government and corporations. Our mission is to delve into the complex interplay of these institutions and to advocate for less governmental control, more individual freedom, and a check on corporate influence.
+Hello and welcome to FreeRangeDemocracy.com, your new go-to resource for exploring the delicate balance of power between government and corporations. Our mission is to delve into the complex interplay of these institutions and to advocate for less governmental control, image: "/images/grok-image-19177d63-f7d6-4ad7-b4b8-d9b3bf81b84b.png"
 
 This is a platform born out of passion and curiosity for understanding the intricacies of democratic systems, corporate governance, and the symbiotic relationship between them. We believe in the possibility of creating a society where freedom and prosperity coexist, where governmental regulations are balanced, and where corporations act ethically and responsibly.
 
