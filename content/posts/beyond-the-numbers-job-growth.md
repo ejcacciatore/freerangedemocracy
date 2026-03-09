@@ -65,4 +65,4 @@ Because in the barnyard of American politics, the roosters who crow the loudest 
 
 ---
 
-*Originally published on LinkedIn by Enrico Cacciatore. Adapted for Free Range Democracy.*
+*Originally published on LinkedIn. Adapted for Free Range Democracy.*

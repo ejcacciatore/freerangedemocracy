@@ -133,6 +133,6 @@ The next 18 months are critical. Now is the time to think big, act boldly, and t
 
 ---
 
-*Originally published on LinkedIn by Enrico Cacciatore. Adapted for Free Range Democracy.*
+*Originally published on LinkedIn. Adapted for Free Range Democracy.*
 
 **Sources:** U.S. Treasury Department, Congressional Budget Office, Office of Management and Budget, Social Security Administration, CMS, Stockholm International Peace Research Institute, Federal Reserve Bank, Government Accountability Office.
